@@ -1,0 +1,31 @@
+{
+    "name": "apache02/yii2-semantic-example",
+    "description": "Yii2 Semantic-UI Examples Project",
+    "keywords": ["yii2", "semantic-ui", "example"],
+    "homepage": "http://example.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.14",
+        "apache02/yii2-semantic-ui": "*",
+		"nezhelskoy/yii2-highlight": "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/Apache02/yii2-semantic-ui.git"
+		},
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

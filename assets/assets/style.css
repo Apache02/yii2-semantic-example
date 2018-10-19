@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	tab-size: 4;
+}
+
+.example {
+	margin-bottom: 1rem;
+}
+.example .code.segment pre {
+	max-height: 25rem;
+	overflow-y: auto;
+}
+
+.wrapper {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > .ui.segment {
+	flex: 1 0 auto;
+}
+.wrapper > .ui#topmenu,
+.wrapper > .ui#footer {
+	flex: 0 0 auto;
+}
+
+#topmenu {
+	border-radius: 0;
+}
+#topmenu .logo {
+}
+#topmenu .logo > img,
+#topmenu .logo > svg {
+	height: 24px;
+}
+
