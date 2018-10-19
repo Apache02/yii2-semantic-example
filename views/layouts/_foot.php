@@ -23,7 +23,7 @@ $menu = [
 			[
 				'label'=>'GitHub',
 				'icon'=>'inverted github',
-				'url'=>'https://github.com/Apache02/yii2-semantic-examples',
+				'url'=>'https://github.com/Apache02/yii2-semantic-example',
 				'options'=>['target'=>'_blank'],
 			]
 		],
