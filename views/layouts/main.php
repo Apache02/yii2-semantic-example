@@ -11,6 +11,8 @@ use app\assets\AppAsset;
 
 $asset = AppAsset::register($this);
 
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => $asset->baseUrl . '/favicon.ico']);
+
 $menu = [
 	'logo'		=> [
 		'content'	=> '<div class="ui image logo">'
