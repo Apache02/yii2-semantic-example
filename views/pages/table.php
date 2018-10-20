@@ -1,6 +1,6 @@
 <?php
 
-$this->title = 'Tables';
+$this->title = 'Table';
 
 ?>
 

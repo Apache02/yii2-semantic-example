@@ -8,6 +8,11 @@ use yii\web\Controller;
 class WidgetsController extends Controller
 {
 	
+	public function actionBreadcrumbs ()
+	{
+		return $this->render('breadcrumbs', []);
+	}
+	
 	public function actionMenu ()
 	{
 		return $this->render('menu', []);
@@ -22,4 +27,5 @@ class WidgetsController extends Controller
 	{
 		return $this->render('grid', []);
 	}
+	
 }

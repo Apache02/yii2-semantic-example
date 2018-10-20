@@ -7,6 +7,8 @@ $config = [
 	'name' => 'Yii2 Semantic Examples',
 	'basePath' => dirname(__DIR__),
 	'bootstrap' => ['log'],
+	'sourceLanguage' => 'en',
+	'language' => 'en',
 	'aliases' => [
 		'@bower' => '@vendor/bower-asset',
 	],
@@ -35,6 +37,14 @@ $config = [
 			'rules' => [
 			],
 		],
+		'i18n' => [
+			'translations' => [
+				'*' => [
+					'class' => 'yii\i18n\PhpMessageSource',
+					'basePath' => '@app/messages',
+				],
+			],
+		], 
 	],
 	'params' => $params,
 ];

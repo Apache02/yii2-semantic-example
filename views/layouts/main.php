@@ -30,12 +30,23 @@ $menu = [
 				'icon'		=> 'home',
 				'url'		=> ['pages/index'],
 			],
-			'divider',
-			'table'		=> [
-				'label'		=> 'Table',
-				'icon'		=> 'table',
-				'url'		=> ['pages/index', 'id'=>'table'],
+			'sandboxes'	=> [
+				'label'		=> 'Sandboxes',
+				'icon'		=> 'check square outline',
+				'items'		=> [
+					'table'		=> [
+						'label'		=> 'Table',
+						'icon'		=> 'table',
+						'url'		=> ['pages/index', 'id'=>'table'],
+					],
+					'menu'		=> [
+						'label'		=> 'Menu',
+						'icon'		=> 'sidebar',
+						'url'		=> ['pages/index', 'id'=>'menu'],
+					],
+				],
 			],
+			'divider',
 			'icons'		=> [
 				'label'		=> 'Icons',
 				'icon'		=> 'smile',
@@ -51,6 +62,11 @@ $menu = [
 	'widgets'	=> [
 		'label'		=> 'Widgets',
 		'items'		=> [
+			[
+				'label'		=> 'Breadcrumbs',
+				'icon'		=> 'cube',
+				'url'		=> ['widgets/breadcrumbs'],
+			],
 			'menu'		=> [
 				'label'		=> 'Menu',
 				'icon'		=> 'sidebar',
