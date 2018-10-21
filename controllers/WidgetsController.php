@@ -28,4 +28,9 @@ class WidgetsController extends Controller
 		return $this->render('grid', []);
 	}
 	
+	public function actionGridMenu ()
+	{
+		return $this->render('gridmenu');
+	}
+	
 }

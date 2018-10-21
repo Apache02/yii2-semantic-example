@@ -53,7 +53,7 @@ class ExampleDataVar extends Example
 			'label'		=> 'PHP',
 			'icon'		=> 'code',
 			'cssClass'	=> 'code php',
-			'content'	=> '<pre>' . $src . '</pre>',
+			'content'	=> '<pre>' . Html::encode($src) . '</pre>',
 		]];
 		parent::run();
 	}
