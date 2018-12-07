@@ -72,7 +72,7 @@ $dataProvider = new ArrayDataProvider([
 <div class="ui vertical segment">
 	<h2 class="ui header">Grid example</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'grid_example_01',
+	'viewFile'	=> 'example_01',
 	'viewData'	=> ['dataProvider' => $dataProvider],
 	'tabHtml'	=> true,
 ]) ?>

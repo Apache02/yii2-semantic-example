@@ -69,7 +69,7 @@ $menu = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Example #1 (layout footer)</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'gridmenu_example_01',
+	'viewFile'	=> 'example_01',
 	'viewData'	=> ['menu' => $menu],
 	'tabHtml'	=> true,
 ]) ?>

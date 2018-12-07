@@ -72,6 +72,11 @@ $menu = [
 				'icon'		=> 'sidebar',
 				'url'		=> ['widgets/menu'],
 			],
+			'grid-menu'	=> [
+				'label'		=> 'GridMenu',
+				'icon'		=> 'sidebar',
+				'url'		=> ['widgets/grid-menu'],
+			],
 			'af'		=> [
 				'label'		=> 'ActiveForm',
 				'icon'		=> 'wpforms',
@@ -81,6 +86,11 @@ $menu = [
 				'label'		=> 'GridView',
 				'icon'		=> 'table',
 				'url'		=> ['widgets/grid'],
+			],
+			'maf'		=> [
+				'label'		=> 'ModalAjaxForm',
+				'icon'		=> 'window restore',
+				'url'		=> ['widgets/modal-ajax-form'],
 			],
 		],
 	],

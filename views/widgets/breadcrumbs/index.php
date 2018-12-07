@@ -38,7 +38,7 @@ $items = [
 	<h2 class="ui header">Example #01 (default)</h2>
 	<p class="ui text">Home link created automaticly.</p>
 	<?= ExampleView::widget([
-		'viewFile'	=> 'breadcrumbs_example_01',
+		'viewFile'	=> 'example_01',
 		'viewData'	=> ['items' => $items],
 		'tabHtml'	=> true,
 	]) ?>
@@ -48,7 +48,7 @@ $items = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Example #02 (customized)</h2>
 	<?= ExampleView::widget([
-		'viewFile'	=> 'breadcrumbs_example_02_customized',
+		'viewFile'	=> 'example_02_customized',
 		'viewData'	=> ['items' => $items],
 		'tabHtml'	=> true,
 	]) ?>

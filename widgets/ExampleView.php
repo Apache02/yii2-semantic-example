@@ -12,6 +12,8 @@ class ExampleView extends Example
 	public $viewFile = null;
 	public $viewData = [];
 	public $tabHtml = false;
+	public $tabView = true;
+	public $tabPHP = true;
 	
 	
 	public function run ()
@@ -29,24 +31,32 @@ class ExampleView extends Example
 			throw new Exception('File path "'.$filePath.'" is not found');
 		}
 		
-		$viewHtml = $view->renderFile($filePath, $this->viewData);
 		$srcHtml = '<pre>'
 			. Html::encode(file_get_contents($filePath))
 			. '</pre>';
 		
-		$this->tabs = [
-			[
+		$this->tabs = [];
+		
+		if ( $this->tabView || $this->tabHtml ) {
+			$viewHtml = $view->renderFile($filePath, $this->viewData);
+		}
+		
+		if ( $this->tabView ) {
+			$this->tabs[] = [
 				'label'		=> 'View',
 				'icon'		=> 'eye',
 				'content'	=> $viewHtml,
-			],
-			[
+			];
+		}
+		
+		if ( $this->tabPHP ) {
+			$this->tabs[] = [
 				'label'		=> 'PHP',
 				'icon'		=> 'code',
 				'content'	=> $srcHtml,
 				'cssClass'	=> 'code php',
-			],
-		];
+			];
+		}
 		
 		if ( $this->tabHtml ) {
 			$this->tabs[] = [

@@ -11,18 +11,18 @@ $this->title = 'ActiveForm';
 
 
 <div class="ui vertical segment">
-	<h2 class="ui header">ActiveForm example</h2>
+	<h2 class="ui header">ActiveForm example #01</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'active-form_example_01',
+	'viewFile'	=> 'example_01',
 	'viewData'	=> ['model' => new \app\models\ExampleForm()],
 	'tabHtml'	=> true,
 ]) ?>
 </div>
 
 <div class="ui vertical segment">
-	<h2 class="ui header">One more ActiveForm example</h2>
+	<h2 class="ui header">ActiveForm example #02</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'active-form_example_02',
+	'viewFile'	=> 'example_02',
 	'viewData'	=> ['model' => new \app\models\ExampleForm2()],
 	'tabHtml'	=> true,
 ]) ?>

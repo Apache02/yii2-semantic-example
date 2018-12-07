@@ -67,7 +67,7 @@ $menu = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Simple menu</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'menu_example_01',
+	'viewFile'	=> 'example_01',
 	'viewData'	=> ['menu' => $menu],
 ]) ?>
 </div>
@@ -76,7 +76,7 @@ $menu = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Inverted blue menu</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'menu_example_01_inverted_blue',
+	'viewFile'	=> 'example_01_inverted_blue',
 	'viewData'	=> ['menu' => $menu],
 ]) ?>
 </div>
@@ -85,7 +85,7 @@ $menu = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Menu inside menu</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'menu_example_02',
+	'viewFile'	=> 'example_02',
 	'viewData'	=> ['menu' => $menu],
 ]) ?>
 </div>
@@ -94,11 +94,11 @@ $menu = [
 <div class="ui vertical very padded segment">
 	<h2 class="ui header">Search</h2>
 <?= ExampleView::widget([
-	'viewFile'	=> 'menu_example_03_search',
+	'viewFile'	=> 'example_03_search',
 	'viewData'	=> ['menu' => $menu],
 ]) ?>
 <?= ExampleView::widget([
-	'viewFile'	=> 'menu_example_03_search_filters',
+	'viewFile'	=> 'example_03_search_filters',
 	'viewData'	=> ['menu' => $menu],
 ]) ?>
 </div>
